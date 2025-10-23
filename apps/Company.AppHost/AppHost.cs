@@ -1,5 +1,7 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
+builder.AddOpenTelemetryCollector("opentelemetry-collector").WithAppForwarding();
+
 var cache = builder.AddRedis("cache");
 var postgres = builder.AddRedis("postgres");
 var mongo = builder.AddRedis("mongo");

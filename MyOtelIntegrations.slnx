@@ -5,6 +5,16 @@
   </Folder>
   <Folder Name="/src/">
     <Project Path="src/MyOtelIntegrations.ServiceDefaults/MyOtelIntegrations.ServiceDefaults.csproj" />
+    <Project Path="src\Company.Apis\Company.Apis.csproj" Type="Classic C#" />
+    <Project Path="src\Company.Azure.ServiceBus\Company.Azure.ServiceBus.csproj" Type="Classic C#" />
+    <Project Path="src\Company.Azure\Company.Azure.csproj" Type="Classic C#" />
+    <Project Path="src\Company.Cache\Company.Cache.csproj" Type="Classic C#" />
+    <Project Path="src\Company.Common\Company.Common.csproj" Type="Classic C#" />
+    <Project Path="src\Company.EFCore.Postgres\Company.EFCore.Postgres.csproj" Type="Classic C#" />
+    <Project Path="src\Company.EFCore\Company.EFCore.csproj" Type="Classic C#" />
+    <Project Path="src\Company.Functions\Company.Functions.csproj" Type="Classic C#" />
+    <Project Path="src\Company.MongoDb\Company.MongoDb.csproj" Type="Classic C#" />
+    <Project Path="src\Company.Telemetry\Company.Telemetry.csproj" Type="Classic C#" />
   </Folder>
   <Folder Name="/test/">
     <Project Path="test\Company.WebApi.Tests\Company.WebApi.Tests.csproj" />
