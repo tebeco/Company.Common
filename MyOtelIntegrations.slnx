@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/apps/">
+    <Project Path="apps\Company.FunctionApp\Company.FunctionApp.csproj" Type="Classic C#" />
+    <Project Path="apps\Company.WebApi\Company.WebApi.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/MyOtelIntegrations.ServiceDefaults/MyOtelIntegrations.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test\Company.WebApi.Tests\Company.WebApi.Tests.csproj" />
+  </Folder>
+  <Project Path="apps\Company.AppHost\Company.AppHost.csproj" />
+</Solution>
