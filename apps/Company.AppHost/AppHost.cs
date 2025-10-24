@@ -1,6 +1,8 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddOpenTelemetryCollector("opentelemetry-collector").WithAppForwarding();
+builder.AddOpenTelemetryCollector("opentelemetry-collector")
+        .WithConfig("opentelemetry-collector-config.yaml")
+        .WithAppForwarding();
 
 var cache = builder.AddRedis("cache");
 var postgres = builder.AddRedis("postgres");

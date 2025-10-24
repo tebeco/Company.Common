@@ -7,11 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\MyOtelIntegrations.ServiceDefaults\MyOtelIntegrations.ServiceDefaults.csproj"/>
+        <ProjectReference Include="..\..\src\Company.Apis\Company.Apis.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0-rc.1.25451.107"/>
     </ItemGroup>
 
 </Project>

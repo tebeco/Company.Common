@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Sdk Name="Aspire.AppHost.Sdk" Version="9.5.1"/>
+    <Sdk Name="Aspire.AppHost.Sdk" Version="9.5.2"/>
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
@@ -16,11 +16,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.1"/>
-        <PackageReference Include="Aspire.Hosting.Redis" Version="9.5.1"/>
-        <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="9.5.1"/>
-        <PackageReference Include="Aspire.Hosting.MongoDB" Version="9.5.1"/>
-        <PackageReference Include="Aspire.Hosting.Azure.Functions" Version="(9.5-*, 9.6]"/>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.2"/>
+        <PackageReference Include="Aspire.Hosting.Redis" Version="9.5.2"/>
+        <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="9.5.2"/>
+        <PackageReference Include="Aspire.Hosting.MongoDB" Version="9.5.2"/>
+        <PackageReference Include="Aspire.Hosting.Azure.Functions" Version="[9.5.*-*, 9.6)"/>
         <PackageReference Include="CommunityToolkit.Aspire.Hosting.OpenTelemetryCollector" Version="9.8.0"/>
     </ItemGroup>
 
