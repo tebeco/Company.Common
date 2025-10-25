@@ -1,4 +1,4 @@
-namespace Company.Apis;
+namespace Company.Apis.HealthChecks;
 
 public class CompanyHealthChecksOptions
 {

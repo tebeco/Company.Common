@@ -26,18 +26,22 @@ exporters:
       x-otlp-api-key: ${env:ASPIRE_API_KEY}
     tls:
       insecure_skip_verify: true
+  otlp/lgtm:
+    endpoint: http://localhost:5317
+    tls:
+      insecure_skip_verify: true
 
 service:
   pipelines:
     traces:
       receivers: [otlp]
       processors: [batch, transform/add-collector-enabled]
-      exporters: [otlp/aspire]
+      exporters: [otlp/aspire, otlp/lgtm]
     metrics:
       receivers: [otlp]
       processors: [batch, transform/add-collector-enabled]
-      exporters: [otlp/aspire]
+      exporters: [otlp/aspire, otlp/lgtm]
     logs:
       receivers: [otlp]
       processors: [batch, transform/add-collector-enabled]
-      exporters: [debug,otlp/aspire]
+      exporters: [debug, otlp/aspire, otlp/lgtm]

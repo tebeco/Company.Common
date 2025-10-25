@@ -4,17 +4,19 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+    	<IsAspireSharedProject>true</IsAspireSharedProject>
     </PropertyGroup>
 
-    <ItemGroup>
+
+	<ItemGroup>
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
         
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0-rc.2.25502.107"/>
-    </ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0-rc.2.25502.107" />
+		<PackageReference Include="Scalar.AspNetCore" Version="2.9.0" />
+	</ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\Company.Common\Company.Common.csproj" />
-        <ProjectReference Include="..\MyOtelIntegrations.ServiceDefaults\MyOtelIntegrations.ServiceDefaults.csproj"/>
     </ItemGroup>
 
 </Project>

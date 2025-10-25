@@ -1,9 +1,11 @@
-using Company.Apis;
+using Company.Apis.HealthChecks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 // ReSharper disable once CheckNamespace
+#pragma warning disable IDE0130 // Namespace does not match folder structure
 namespace Microsoft.AspNetCore.Routing;
+#pragma warning restore IDE0130 // Namespace does not match folder structure
 
 public static class CompanyHealthChecksEndpointRouteBuilderExtensions
 {
